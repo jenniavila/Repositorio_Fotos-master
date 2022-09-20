@@ -1,0 +1,45 @@
+#tarjetero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.tarjetas{
+    width: 30%;
+    height: 30%;
+    border: 3px solid rgb(116, 13, 81);
+    border-radius:22px;
+    background-color: rgb(200, 140, 206);
+    margin: 10px 10px 10px 10px;    
+}
+
+.foto {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius:22px;
+}
+
+@media (max-width: 630px) {
+    .tarjetas {
+      width: 90%;
+      height: auto;
+    }
+  
+    #tarjetero {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    header {
+      flex-direction: column;
+      height: 200px;
+    
+    }
+  }
